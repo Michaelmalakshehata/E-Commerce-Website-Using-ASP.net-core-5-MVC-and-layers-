@@ -1,0 +1,110 @@
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\web.config
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\appsettings.json
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.exe
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.deps.json
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.runtimeconfig.json
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.runtimeconfig.dev.json
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.Views.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.Views.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Humanizer.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.BL.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.DAL.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.BL.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.DAL.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.csproj.AssemblyReference.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.AssemblyInfoInputs.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.AssemblyInfo.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.csproj.CoreCompileInputs.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorAssemblyInfo.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorAssemblyInfo.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\scopedcss\bundle\E-Commerce Website.styles.css
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\staticwebassets\E-Commerce Website.StaticWebAssets.Manifest.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.TagHelpers.input.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.TagHelpers.output.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorCoreGenerate.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorTargetAssemblyInfo.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorTargetAssemblyInfo.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.Views.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.csproj.CopyComplete
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\refint\E-Commerce Website.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.genruntimeconfig.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\ref\E-Commerce Website.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\Registration.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\libman.json
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Category\CreateCategory.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Category\DeletedCategory.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Category\UpdateCategory.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Menu\CreateProducts.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Menu\Deletedproduct.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Menu\Index.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Menu\UpdateProduct.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Home\Error.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\Index.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\SearchMenu.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\SearchResult.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\ShowCategoryMenu.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\ShowDetailes.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\WishList\Index.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Profile\Index.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\FinishedOrder\Index.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Order\AddOrder.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Order\ShowOrders.cshtml.g.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\RequestOrder\Index.cshtml.g.cs

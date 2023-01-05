@@ -1,0 +1,89 @@
+﻿@model CartViewModel
+@{
+    ViewData["Title"] = "Home";
+    Layout = "_Layout";
+}
+
+
+<div class="home-bg">
+     
+<section class="home">
+
+   <div class="swiper home-slider">
+   
+   <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide">
+          @foreach(var items in ViewBag.lastproduct)
+        {
+           <div class="image">
+            <img src="~/uploaded_img/@items.imgpath" alt="">
+         </div>
+        }
+         
+         <div class="content">
+            <h3>latest Products</h3>
+            <a href="shop.php" class="btn">shop now</a>    
+         </div>
+      </div>
+
+      
+   </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+</div>
+
+
+<section class="category">
+      <h1 class="heading">Shop by Category</h1>
+
+      <nav class="nav nav-pills flex-column flex-sm-row">
+      @foreach(var items in ViewBag.list)
+        {
+        
+        <a class="flex-sm-fill text-sm-center nav-link bg-primary text-white m-1" asp-action="ShowCategoryMenu" asp-controller="ShowMenu" asp-route-Id="@items.Id" style="font-size:20px">@items.Name</a>
+        }
+    </nav>
+ </section>
+
+<section class="home-products">
+
+   <h1 class="heading">latest products</h1>
+
+   <div class="swiper products-slider">
+
+   <div class="swiper-wrapper">
+     @foreach(var item in ViewBag.listproduct)
+       {
+   
+      <form asp-action="AddToCart"asp-controller="Cart" class="swiper-slide slide">
+            <input type="hidden" asp-for="Ordername" value="@item.Ordername" />
+            <input type="hidden" asp-for="Price" value="@item.Price"/>
+            <input type="hidden" asp-for="imgpath" value="@item.imgpath"/>
+         <a asp-action="AddToWishList" asp-controller="WishList" asp-route-Id="@item.MenuId" class="fas fa-heart"></a>
+         <a asp-action="ShowDetailes" asp-controller="ShowMenu" asp-route-Id="@item.MenuId" class="fas fa-eye"></a>
+      <img src="~/uploaded_img/@item.imgpath" alt="">
+      <div class="name">@item.Ordername</div>
+      <div class="flex">
+         <div class="price"><span>$</span>@item.Price<span>/-</span></div>
+         <input type="number" asp-for="Quantity" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+      </div>
+      <button type="submit" class="btn" name="add_to_cart">Add To Cart </button>
+   </form> 
+
+        }
+       </div>
+
+   <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

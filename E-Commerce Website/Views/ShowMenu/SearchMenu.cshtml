@@ -1,0 +1,19 @@
+﻿@model SearchViewModel
+@{
+    ViewData["Title"] = "Search";
+    Layout = "_Layout";
+}
+
+<section class="search-form">
+   <form asp-action="SearchResult" asp-controller="ShowMenu" method="get">
+      <input type="text" asp-for="name" placeholder="search here..." maxlength="100" class="box" required>
+      <button type="submit" class="fas fa-search" name="search_btn"></button>
+   </form>
+</section>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+
+
