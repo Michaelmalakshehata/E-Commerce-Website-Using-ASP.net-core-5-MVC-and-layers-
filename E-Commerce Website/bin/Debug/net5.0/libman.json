@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "Swiper@8.4.5",
+      "destination": "wwwroot/lib/Swiper/"
+    }
+  ]
+}

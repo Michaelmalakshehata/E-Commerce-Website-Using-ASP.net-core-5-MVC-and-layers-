@@ -1,0 +1,25 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_Layout";
+}
+<section class="form-container">
+
+   <form action="" method="post">
+      <h3>login now</h3>
+        <div asp-validation-summary="All" class="text-danger" style="font-size:14px;"></div>
+      <input type="text" asp-for="Username" required placeholder="enter your username"   class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" asp-for="Password" required placeholder="enter your password"   class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+       <div class="input-group">
+           <label asp-for="RememberMe" style="font-size:15px;margin-right:10px" ></label>
+           <input type="checkbox" asp-for="RememberMe" class="filled-in chk-col-pink">
+       </div>
+      <input type="submit" value="login now" class="btn" name="submit">
+      <p>don't have an account?</p>
+      <a asp-action="Registration" asp-controller="Account" class="option-btn">register now</a>
+   </form>
+
+</section>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,148 @@
+﻿@{
+ @using E_Commerce_Website.BL.Repositories
+ @inject IServiceWishList serviceWish
+ var countWish=await serviceWish.GetWishListCount(User.Identity.Name);
+ @inject IServiceCart serviceCart
+ var countCart=await serviceCart.GetCartCount(User.Identity.Name);
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>@ViewData["Title"] - E-Commerce</title>
+
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css">
+    @await RenderSectionAsync("stylecss", required: false)
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a asp-controller="Home" asp-action="Index" class="logo">Shopie<span>.</span></a>
+
+      <nav class="navbar">
+         <a asp-controller="Home" asp-action="Index">home</a>
+         <a asp-controller="Home" asp-action="About">about</a>
+         <a asp-controller="Order" asp-action="ShowOrders">orders</a>
+         <a asp-controller="ShowMenu" asp-action="Index">shop</a>
+         <a asp-controller="Home" asp-action="Contact">contact</a>
+         @if(@User.IsInRole(Roles.adminrole))
+         {
+          <a asp-action="Index" asp-controller="Admin">Admin</a>
+         }
+      </nav>
+
+      <div class="icons">
+       
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <a asp-controller="ShowMenu" asp-action="SearchMenu"><i class="fas fa-search"></i></a>
+         <a asp-controller="WishList" asp-action="Index"><i class="fas fa-heart"></i><span>@countWish</span></a>
+         <a asp-controller="Cart" asp-action="Index"><i class="fas fa-shopping-cart"></i><span>@countCart</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+      </div>
+
+      <div class="profile">
+         @if(User.Identity.IsAuthenticated==true)
+          {
+         <p>@User.Identity.Name</p>
+         <a asp-controller="Profile" asp-action="Index" class="btn">profile</a>
+        
+         <a asp-controller="Account" asp-action="Logout" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a> 
+          }
+          else
+          {
+         <p>please login or register first!</p>
+         <div class="flex-btn">
+            <a asp-controller="Account" asp-action="Registration" class="option-btn">register</a>
+            <a asp-controller="Account" asp-action="Login" class="option-btn">login</a>
+         </div>
+          }
+         
+         
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- side-bar section starts -->
+
+
+<!-- home section starts  -->
+
+@RenderBody()
+
+
+
+
+<!-- footer section starts  -->
+<footer class="footer">
+
+   <section class="grid">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a asp-controller="Home" asp-action="Index"> <i class="fas fa-angle-right"></i> home</a>
+         <a asp-controller="Home" asp-action="About"> <i class="fas fa-angle-right"></i> about</a>
+         <a asp-controller="ShowOrder" asp-action="Index"> <i class="fas fa-angle-right"></i> shop</a>
+         <a asp-controller="Home" asp-action="Contact"> <i class="fas fa-angle-right"></i> contact</a>
+      </div>
+
+      <div class="box">
+         <h3>extra links</h3>
+         <a asp-controller="Account" asp-action="Login"> <i class="fas fa-angle-right"></i> login</a>
+         <a asp-controller="Account" asp-action="Register"> <i class="fas fa-angle-right"></i> register</a>
+         <a asp-controller="Cart" asp-action="Index"> <i class="fas fa-angle-right"></i> cart</a>
+         <a asp-controller="Order" asp-action="ShowOrders"> <i class="fas fa-angle-right"></i> orders</a>
+      </div>
+
+      <div class="box">
+         <h3>contact us</h3>
+         <a href="tel:1234567890"><i class="fas fa-phone"></i>+20 01054655473</a>
+         <a href="tel:11122233333"><i class="fas fa-phone"></i>+20 01112546734</a>
+         <a href="mailto:www.michael.m.s.com@gmail.com"><i class="fas fa-envelope"></i> michaelsoft.com</a>
+         <a href="https://www.google.com/myplace"><i class="fas fa-map-marker-alt"></i> minya, Egypt </a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+         <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+         <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright 2023> by <span>MichaelSoft</span> | all rights reserved!</div>
+
+</footer>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="~/js/script.js" asp-append-version="true"></script>
+
+
+@await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

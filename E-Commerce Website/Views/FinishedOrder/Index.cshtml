@@ -1,0 +1,84 @@
+﻿@model List<FinishedOrders>
+@{
+    ViewData["Title"] = "Request Orders";
+    Layout = "_AdminLayout";
+     Pager pager=new Pager();
+    int pageNo=0;
+    if(ViewBag.Pager is not null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+<div style="margin-top:30px">
+    <div class="input-group justify-content-center mb-3">
+        <a asp-action="Index" asp-controller="Admin" class="btn btn-secondary" style="margin-right:6rem">Back to Dashboard</a>
+       <a asp-action="Index" asp-controller="FinishedOrder" class="btn btn-primary" style="margin-right:6rem">Refresh</a>
+    </div>
+    <div id="content" >
+        <table class="table table-bordered mt-3 table-striped table-hover">
+            <thead class=" text-center" style="background:#2b6777 ;color:white">
+                <tr style="margin:auto">
+                     <th>Code</th>
+                     <th>Order Detailes</th>
+                     <th>Total Price</th>
+                     <th>Name</th>
+                     <th>Address</th>
+                     <th>Phone Number</th>
+                     <th>Email</th>
+                     <th>Date and Time</th>  
+                     <th>State</th> 
+                 </tr>
+             </thead>
+             <tbody class="m-1">
+               @foreach(var itm in Model)
+                {
+                    <tr style="margin:auto">
+                        <td>@itm.Id</td>
+                        <td>@itm.OrderDetails</td>
+                        <td>@itm.TotalPrice</td>
+                        <td>@itm.Username</td>
+                        <td>@itm.AddressDetailes</td>
+                        <td>@itm.Phonenumber</td>
+                        <td>@itm.Email</td>
+                         <td>@itm.Date</td>
+                         <td>@itm.state</td> 
+                    </tr>
+        
+                }
+            </tbody>
+        </table>
+         <nav class="...">
+            @if(pager.TotalPages>0)
+            {
+                <ul class="pagination justify-content-center pagination-lg">
+                    @if(pager.CurrentPage>1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link"asp-action="Index" asp-controller="FinishedOrder" asp-route-pg="1">Frist</a>
+                        </li>  
+                        <li>
+                            <a class="page-link"asp-action="Index" asp-controller="FinishedOrder" asp-route-pg="@(pager.CurrentPage-1)">Previous</a>
+                        </li>
+                    }
+                    @for(var pge =pager.StartPage;pge <= pager.EndPage;pge++)
+                    {
+                        <li class="page-item" @(pge==pager.CurrentPage? "active" :"")>
+                            <a class="page-link"asp-action="Index" asp-controller="FinishedOrder" asp-route-pg="@pge">@pge</a>
+                        </li>
+                    }
+                    @if(pager.CurrentPage<pager.TotalPages)
+                    {
+                       <li class="page-item">
+                            <a class="page-link"asp-action="Index" asp-controller="FinishedOrder" asp-route-pg="@(pager.CurrentPage+1)">Next</a>
+                        </li> 
+                        <li class="page-item">
+                            <a class="page-link"asp-action="Index" asp-controller="FinishedOrder" asp-route-pg="@(pager.TotalPages)">Last</a>
+                        </li> 
+                    }
+
+                </ul>
+            }
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+﻿@model CartViewModel
+@{
+ ViewData["Title"] = "WishList";
+    Layout = "_Layout";
+       Pager pager=new Pager();
+    int pageNo=0;
+    if(ViewBag.Pager is not null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+<section class="products shopping-cart">
+
+   <h3 class="heading">WishList Products</h3>
+    @if ( ViewBag.listcount != 0)
+    {
+       <div class="box-container">
+        @foreach (var item in ViewBag.list)
+        {
+                <form asp-action="AddToCart" asp-controller="Cart" class="box">
+                    <input type="hidden"asp-for="Ordername" value="@item.Ordername"/>
+                    <input type="hidden"asp-for="imgpath" value="@item.imgpath"/>
+                    <input type="hidden"asp-for="Price" value="@item.Price"/>
+                    <input type="hidden"asp-for="UserId" value="@item.UserId"/>  
+                    <a class="fas fa-times" asp-action="DeleteWishListItem"  asp-controller="WishList" asp-route-Id="@item.Id" style="text-decoration:none;padding:auto 4px ;color:red;font-size:20px" onclick="return confirm('you sure to delete this item @item.Ordername ?')"></a>
+                    <img src="~/uploaded_img/@item.imgpath" alt="">
+                    <div class="name">@item.Ordername</div>
+                    <div class="flex">
+                        <div class="price">$@item.Price</div>
+                        <input type="number" asp-for="Quantity" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;">
+                        <button type="submit" class="fas fa-shopping-cart" style="font-size:24px" name="update_qty"></button>
+                    </div>
+                </form>
+        }
+       </div>
+       <br />
+       <nav class="...">
+            @if(pager.TotalPages>0)
+            {
+                <ul class="pagination justify-content-center pagination-lg">
+                    @if(pager.CurrentPage>1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link"asp-action="Index" asp-controller="WishList" asp-route-pg="1">Frist</a>
+                        </li>  
+                        <li>
+                            <a class="page-link"asp-action="Index" asp-controller="WishList" asp-route-pg="@(pager.CurrentPage-1)">Previous</a>
+                        </li>
+                    }
+                    @for(var pge =pager.StartPage;pge <= pager.EndPage;pge++)
+                    {
+                        <li class="page-item" @(pge==pager.CurrentPage? "active" :"")>
+                            <a class="page-link"asp-action="Index" asp-controller="WishList" asp-route-pg="@pge">@pge</a>
+                        </li>
+                    }
+                    @if(pager.CurrentPage<pager.TotalPages)
+                    {
+                       <li class="page-item">
+                            <a class="page-link"asp-action="Index" asp-controller="WishList" asp-route-pg="@(pager.CurrentPage+1)">Next</a>
+                        </li> 
+                        <li class="page-item">
+                            <a class="page-link"asp-action="Index" asp-controller="WishList" asp-route-pg="@(pager.TotalPages)">Last</a>
+                        </li> 
+                    }
+
+                </ul>
+            }
+        </nav>
+        <div class="cart-total">
+            <a asp-action="Index" asp-controller="ShowMenu" class="option-btn">continue shopping</a>
+            <a asp-action="DeleteAllWishListItems" asp-controller="WishList" onclick="return confirm('delete all from cart?');" style="color:red;font-size:18px" class="mt-5">delete all items</a>
+        </div>
+    }
+  else
+    {
+        <div class="more-btn">
+            <a asp-action="Index" asp-controller="ShowMenu" class="delete-btn">Add Frist Item To WishList</a>
+       </div>
+    }
+</section>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

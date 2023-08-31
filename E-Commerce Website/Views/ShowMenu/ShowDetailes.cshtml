@@ -1,0 +1,51 @@
+﻿@model Menus
+@{
+    ViewData["Title"] = "View Detailes";
+    Layout ="_Layout";
+}
+<section class="quick-view">
+
+   <h1 class="heading">quick view</h1>
+   <form asp-action="AddToCart"asp-controller="Cart" class="box">
+      <input type="hidden" asp-for="Name" value="@Model.Name" />
+       <input type="hidden"asp-for="Price" value="@Model.Price"/>
+        <input type="hidden" asp-for="imgpath" value="@Model.imgpath"/>
+      <div class="row">
+         <div class="image-container">
+            <div class="main-image">
+               <img src="~/uploaded_img/@Model.imgpath" alt="">
+               <img src="~/uploaded_img/@Model.imgpath2"alt="">
+               <img src="~/uploaded_img/@Model.imgpath3" alt="">
+            </div>
+         </div>
+         <div class="content">
+            <div class="name">@Model.Name</div>
+            <div class="flex">
+               <div class="price"><span>$</span>@Model.Price<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+            </div>
+             <div class="details">@Model.Detailes</div>
+            <div class="flex-btn">
+               <button type="submit" class="btn" name="add_to_cart">Add To Cart </button>
+               <a class="option-btn" asp-action="AddToWishList" asp-controller="WishList" asp-route-Id="@Model.Id" name="add_to_wishlist" style="text-decoration:none">add to wishlist</a>
+            </div>
+         </div>
+      </div>
+   </form>
+
+</section>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+
+
+
+
+
+
+
+
+

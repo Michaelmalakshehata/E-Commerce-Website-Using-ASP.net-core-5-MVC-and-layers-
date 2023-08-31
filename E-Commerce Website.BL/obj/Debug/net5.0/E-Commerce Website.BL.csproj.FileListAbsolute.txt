@@ -1,0 +1,90 @@
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.deps.json
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.json
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.dev.json
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.AssemblyReference.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfoInputs.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfo.cs
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CoreCompileInputs.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CopyComplete
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\refint\E-Commerce Website.BL.dll
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.pdb
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.genruntimeconfig.cache
+C:\Users\NoteBook\OneDrive\Desktop\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\ref\E-Commerce Website.BL.dll
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.deps.json
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.json
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.dev.json
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.dll
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.pdb
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.dll
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.pdb
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.AssemblyReference.cache
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.GeneratedMSBuildEditorConfig.editorconfig
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfoInputs.cache
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfo.cs
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CoreCompileInputs.cache
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CopyComplete
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.dll
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\refint\E-Commerce Website.BL.dll
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.pdb
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.genruntimeconfig.cache
+F:\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\ref\E-Commerce Website.BL.dll
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.deps.json
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.json
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.dev.json
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.dll
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.pdb
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.dll
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.pdb
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.AssemblyReference.cache
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfoInputs.cache
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfo.cs
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CoreCompileInputs.cache
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CopyComplete
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.dll
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\refint\E-Commerce Website.BL.dll
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.pdb
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.genruntimeconfig.cache
+C:\Users\NoteBook\OneDrive\Desktop\edit\E-Commerce Website\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\ref\E-Commerce Website.BL.dll
+F:\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.deps.json
+F:\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.json
+F:\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.dev.json
+F:\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.dll
+F:\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.pdb
+F:\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.dll
+F:\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.pdb
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.AssemblyReference.cache
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.GeneratedMSBuildEditorConfig.editorconfig
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfoInputs.cache
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfo.cs
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CoreCompileInputs.cache
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CopyComplete
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.dll
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\refint\E-Commerce Website.BL.dll
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.pdb
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.genruntimeconfig.cache
+F:\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\ref\E-Commerce Website.BL.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.deps.json
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.json
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.dev.json
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.pdb
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.pdb
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.AssemblyReference.cache
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfoInputs.cache
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfo.cs
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CoreCompileInputs.cache
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CopyComplete
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\refint\E-Commerce Website.BL.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.pdb
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.genruntimeconfig.cache
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\ref\E-Commerce Website.BL.dll

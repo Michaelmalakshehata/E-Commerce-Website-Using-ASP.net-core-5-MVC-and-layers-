@@ -1,0 +1,24 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_Layout";
+}
+<section class="form-container">
+
+   <form asp-action="Registration" asp-controller="Account">
+      <h3>register now</h3>
+       <div asp-validation-summary="All" class="text-danger" style="font-size:14px;"></div>
+      <input type="text" asp-for="Username" required placeholder="enter your username" maxlength="20"  class="box">
+      <input type="email" asp-for="Email" required placeholder="enter your email" maxlength="50"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" asp-for="Password" required placeholder="enter your password" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" asp-for="ConfirmPassword" required placeholder="confirm your password" maxlength="20"  class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="text" asp-for="Address" required placeholder="enter your address" maxlength="20"  class="box">
+      <input type="submit" value="register now" class="btn" name="submit">
+      <p>already have an account?</p>
+      <a href="user_login.php" class="option-btn">login now</a>
+   </form>
+
+</section>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
