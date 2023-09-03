@@ -548,3 +548,31 @@ F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\re
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.pdb
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.genruntimeconfig.cache
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\ref\E-Commerce Website.dll
+F:\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\BouncyCastle.Cryptography.dll
+F:\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\MailKit.dll
+F:\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\MimeKit.dll
+F:\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Formats.Asn1.dll
+F:\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+F:\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
+F:\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Text.Encoding.CodePages.dll
+F:\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ConfirmEmail.cshtml.g.cs
+F:\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\Error.cshtml.g.cs
+F:\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\SuccessRegistration.cshtml.g.cs
+F:\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ForgotPassword.cshtml.g.cs
+F:\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ForgotPasswordConfirmation.cshtml.g.cs
+F:\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
+F:\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\BouncyCastle.Cryptography.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\MailKit.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\MimeKit.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Formats.Asn1.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Text.Encoding.CodePages.dll
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ConfirmEmail.cshtml.g.cs
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\Error.cshtml.g.cs
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ForgotPassword.cshtml.g.cs
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ForgotPasswordConfirmation.cshtml.g.cs
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs
+F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\SuccessRegistration.cshtml.g.cs

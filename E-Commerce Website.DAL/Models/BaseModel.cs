@@ -19,9 +19,7 @@ namespace E_Commerce_Website.DAL.Models
         public DateTime? DeleteDate { get; set; }
         public DateTime? RestoreDate { get; set; }
         [Required]
-        public string CreateUserName { get; set; }
-        public string? UpdateUserName { get; set; }
-        public string? DeleteUserName { get; set; }
-        public string? RestoreUserName { get; set; }
+        public string UserName { get; set; }
+       
     }
 }

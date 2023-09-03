@@ -38,14 +38,11 @@
                      <th>Code</th>
                      <th>Name</th>
                      <th>Is Deleted</th>
+                      <th>UserName</th>
                       <th>Create Date</th>
-                      <th>Create UserName</th>
                       <th>Update Date</th>
-                      <th>Update UserName</th>
                       <th>Delete Date</th>
-                      <th>Delete UserName</th>
                       <th>Restore Date</th>
-                      <th>Restore Username</th>
                      <th>Options</th>
                  </tr>
              </thead>
@@ -56,14 +53,11 @@
                         <td>@itm.Id</td>
                         <td>@itm.Name</td>                       
                         <td>@itm.IsDeleted</td>
+                        <td>@itm.UserName</td>
                          <td>@itm.CreateDate</td>
-                        <td>@itm.CreateUserName</td>
                         <td>@itm.UpdateDate</td>
-                        <td>@itm.UpdateUserName</td>
                         <td>@itm.DeleteDate</td>
-                        <td>@itm.DeleteUserName</td>
                         <td>@itm.RestoreDate</td>
-                        <td>@itm.RestoreUserName</td>
                         <td>
                             <a asp-action="UpdateCategory" id="btn" asp-controller="Category" asp-route-id="@itm.Id"class="btn btn-secondary m-1">Edit</a>
                             <a asp-action="DeleteCategory" id="btn" asp-controller="Category"asp-route-id="@itm.Id"onclick="return confirm('are you sure to delete this item @itm.Name')" class="btn btn-danger m-1">Delete</a>

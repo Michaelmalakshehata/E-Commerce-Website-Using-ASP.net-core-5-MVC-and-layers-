@@ -1,5 +1,6 @@
 using E_Commerce_Website.BL.IRepositories;
 using E_Commerce_Website.BL.Repositories;
+using E_Commerce_Website.BL.Repositories.EmailService;
 using E_Commerce_Website.DAL;
 using E_Commerce_Website.DAL.Models;
 using Microsoft.AspNetCore.Builder;
@@ -28,6 +29,7 @@ namespace E_Commerce_Website
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllersWithViews();
             // Add services to the container.
             services.AddDbContext<EntityContext>(option =>
@@ -44,12 +46,15 @@ namespace E_Commerce_Website
                 options.Password.RequireUppercase = true;
                 options.Password.RequiredLength = 6;
                 options.Password.RequiredUniqueChars = 0;
+                options.User.RequireUniqueEmail = true;
+                options.SignIn.RequireConfirmedEmail = true;
             }).AddEntityFrameworkStores<EntityContext>()
                        .AddTokenProvider<DataProtectorTokenProvider<ApplicationUser>>(TokenOptions.DefaultProvider);
 
-
             // Add services
-
+            var emailConfig = Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
+            services.AddSingleton(emailConfig);
+            services.AddScoped<IEmailSender, EmailSender>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericService<>));
             services.AddScoped(typeof(IServiceCategory), typeof(ServiceCategory));
             services.AddScoped(typeof(IServiceProduct), typeof(ServiceProduct));

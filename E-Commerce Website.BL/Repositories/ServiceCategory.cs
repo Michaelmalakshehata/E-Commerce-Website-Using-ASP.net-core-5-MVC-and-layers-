@@ -31,7 +31,7 @@ namespace E_Commerce_Website.BL.Repositories
                     Categories categories = new Categories()
                     {
                         Name = categoryViewModel.Name,
-                        CreateUserName=name
+                        UserName=name
                     };
                     return await genericRepository.add(categories);
                    

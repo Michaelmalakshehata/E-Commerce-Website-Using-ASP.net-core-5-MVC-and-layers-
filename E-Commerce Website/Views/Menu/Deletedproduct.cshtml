@@ -11,7 +11,7 @@
     }
 }
 
-<div style="margin-top:30px">
+<div style="margin-top:20px">
             <div class="flex-flow justify-content-start input-group mb-4">
               <a asp-action="Index" asp-controller="Admin" class="btn btn-secondary" style="margin-right:6rem">Back to Dashboard</a>
             </div>
@@ -43,14 +43,11 @@
                      <th>Image 3</th>
                      <th>Category Code</th>
                      <th>Is Deleted</th>
+                     <th>UserName</th>
                       <th>Create Date</th>
-                      <th>Create UserName</th>
                       <th>Update Date</th>
-                      <th>Update UserName</th>
                       <th>Delete Date</th>
-                      <th>Delete UserName</th>
                       <th>Restore Date</th>
-                      <th>Restore Username</th>
                      <th>Options</th>
                  </tr>
              </thead>
@@ -73,14 +70,11 @@
                           </td>
                         <td>@itm.CategoryId</td>
                         <td>@itm.IsDeleted</td>
+                         <td>@itm.UserName</td>
                          <td>@itm.CreateDate</td>
-                        <td>@itm.CreateUserName</td>
                         <td>@itm.UpdateDate</td>
-                        <td>@itm.UpdateUserName</td>
                         <td>@itm.DeleteDate</td>
-                        <td>@itm.DeleteUserName</td>
                         <td>@itm.RestoreDate</td>
-                        <td>@itm.RestoreUserName</td>
                         <td>
                             <a asp-action="RestoreProduct" id="btn" asp-controller="Menu"asp-route-id="@itm.Id"onclick="return confirm('are you sure to Restore this item @itm.Name')" class="btn btn-danger">Restore</a>
                         </td>

@@ -73,7 +73,7 @@ namespace E_Commerce_Website.BL.Repositories
 
             }
             data.UpdateDate = DateTime.Now;
-            data.UpdateUserName=name;
+            data.UserName=name;
             _Context.Update(data);
 
            await _Context.SaveChangesAsync();
@@ -95,7 +95,7 @@ namespace E_Commerce_Website.BL.Repositories
             T obj = await _Entities.FindAsync(id);
             obj.IsDeleted = true;
             obj.DeleteDate = DateTime.Now;
-            obj.DeleteUserName = name;
+            obj.UserName = name;
             _Context.Update(obj);
             await _Context.SaveChangesAsync();
             return id;
@@ -138,7 +138,7 @@ namespace E_Commerce_Website.BL.Repositories
             T obj = await _Entities.FindAsync(id);
             obj.IsDeleted = false;
             obj.RestoreDate = DateTime.Now;
-            obj.RestoreUserName = name;
+            obj.UserName = name;
             _Context.Update(obj);
             await _Context.SaveChangesAsync();
             return id;

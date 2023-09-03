@@ -129,15 +129,8 @@ namespace E_Commerce_Website.DAL.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("CreateUserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime?>("DeleteDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("DeleteUserName")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -149,13 +142,11 @@ namespace E_Commerce_Website.DAL.Migrations
                     b.Property<DateTime?>("RestoreDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("RestoreUserName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("UpdateUserName")
+                    b.Property<string>("UserName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -216,15 +207,8 @@ namespace E_Commerce_Website.DAL.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("CreateUserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime?>("DeleteDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("DeleteUserName")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Detailes")
                         .IsRequired()
@@ -243,13 +227,11 @@ namespace E_Commerce_Website.DAL.Migrations
                     b.Property<DateTime?>("RestoreDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("RestoreUserName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("UpdateUserName")
+                    b.Property<string>("UserName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("imgpath")

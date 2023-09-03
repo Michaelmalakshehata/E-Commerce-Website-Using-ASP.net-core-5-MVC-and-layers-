@@ -28,14 +28,14 @@ namespace E_Commerce_Website.BL.Repositories
             {
                 if (order is not null)
                 {
-                    string orderdetails = "";
+                    StringBuilder orderdetails = new StringBuilder();
                     int i = 1;
                     List<string> cartitem = await OrderDetailes(order.Username);
                     if (cartitem is not null)
                     {
                         foreach (var item in cartitem)
                         {
-                            orderdetails += "Order " + i++ + " := " + item.ToString() + " _  ";
+                            orderdetails =orderdetails.Append("Order " + i++ + " := " + item.ToString() + " _  ");
                         }
                         double price = await totalprice(order.Username);
                         Orders orders = new Orders()
@@ -46,7 +46,7 @@ namespace E_Commerce_Website.BL.Repositories
                             Phonenumber = order.PhoneNumber,
                             TotalPrice = price,
                             UserId = order.UserId,
-                            OrderDetails = orderdetails
+                            OrderDetails = orderdetails.ToString()
                         };
                         await context.AddAsync(orders);
                         await context.SaveChangesAsync();
@@ -156,7 +156,7 @@ namespace E_Commerce_Website.BL.Repositories
 
                             foreach (var item in carts)
                             {
-                                cartitem.Add(item.Quantity + " * " + item.Ordername + " :=  $" + item.TotalPrice);
+                                cartitem.Add($"{item.Quantity} * { item.Ordername} :=  $ {item.TotalPrice}");
                             }
                             return cartitem;
                         }

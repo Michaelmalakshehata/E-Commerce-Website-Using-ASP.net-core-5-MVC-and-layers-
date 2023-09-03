@@ -15,7 +15,7 @@
       <input type="text" asp-for="Address" required placeholder="enter your address" maxlength="20"  class="box">
       <input type="submit" value="register now" class="btn" name="submit">
       <p>already have an account?</p>
-      <a href="user_login.php" class="option-btn">login now</a>
+      <a asp-action="Login" asp-controller="Account" class="option-btn">login now</a>
    </form>
 
 </section>

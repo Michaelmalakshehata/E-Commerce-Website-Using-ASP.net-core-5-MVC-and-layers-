@@ -64,7 +64,7 @@ namespace E_Commerce_Website.BL.Repositories
                         imgpath2 = filename2,
                         imgpath3 = filename3,
                         CategoryId = productViewModel.CategoryId,
-                        CreateUserName = name
+                        UserName = name
                     };
                     return await genericRepository.add(menu);
                 }
