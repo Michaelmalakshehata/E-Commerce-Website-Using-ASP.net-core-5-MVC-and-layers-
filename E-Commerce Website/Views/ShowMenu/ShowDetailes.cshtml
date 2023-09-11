@@ -1,40 +1,189 @@
-﻿@model Menus
+﻿@model CartViewModel
 @{
     ViewData["Title"] = "View Detailes";
     Layout ="_Layout";
+     Pager pager=new Pager();
+    int pageNo=0;
+    if(ViewBag.Pager is not null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+    ViewData["ProductId"]=ViewBag.menu.Id;
+    var ratingSum=ViewBag.RatingSum;
+    var ratingCount=ViewBag.RatingCount;
+    decimal rating = 0;
+    if(ratingCount>0)
+    {
+        rating = (ratingSum / ratingCount);
+    }
+    var totalRating = int.Parse(rating.ToString());
 }
 <section class="quick-view">
 
    <h1 class="heading">quick view</h1>
    <form asp-action="AddToCart"asp-controller="Cart" class="box">
-      <input type="hidden" asp-for="Name" value="@Model.Name" />
-       <input type="hidden"asp-for="Price" value="@Model.Price"/>
-        <input type="hidden" asp-for="imgpath" value="@Model.imgpath"/>
+            <input type="hidden" asp-for="Ordername" value="@ViewBag.menu.Name" />
+            <input type="hidden" asp-for="Price" value="@ViewBag.menu.Price"/>
+            <input type="hidden" asp-for="Discount" value="@ViewBag.menu.Discount"/>
+            <input type="hidden" asp-for="imgpath" value="@ViewBag.menu.imgpath"/>     
       <div class="row">
          <div class="image-container">
             <div class="main-image">
-               <img src="~/uploaded_img/@Model.imgpath" alt="">
-               <img src="~/uploaded_img/@Model.imgpath2"alt="">
-               <img src="~/uploaded_img/@Model.imgpath3" alt="">
+               <img src="~/uploaded_img/@ViewBag.menu.imgpath" alt="">
+               <video width="500" height="400" controls loop>
+                  <source src="~/uploaded_img/@ViewBag.menu.VideoPath" type="video/mp4">
+               </video>
             </div>
          </div>
+       
          <div class="content">
-            <div class="name">@Model.Name</div>
+            <div class="name">@ViewBag.menu.Name</div>
+             <div>
+               @for(var i=1;i<=totalRating;i++)
+               {
+                    <span class="starGlowN"></span>
+                }
+                @for(var i=(totalRating+1);i<=5;i++)
+                {
+                    <span class="starFadeN"></span>
+                }
+         </div> 
+         <span style="color:gray;margin-left:1rem;font-size:14px;">@ratingCount reviews</span>
             <div class="flex">
-               <div class="price"><span>$</span>@Model.Price<span>/-</span></div>
-               <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                @if(ViewBag.menu.DiscountPrice >0){
+                        <div class="text-warning" style="text-decoration:line-through;text-decoration-color:red;font-size:16px">$@ViewBag.menu.Price</div>
+                        <div class="text-primary" style="font-size:16px">%@ViewBag.menu.Discount Off</div> 
+                        <div class="price">$@ViewBag.menu.DiscountPrice</div>
+                        }
+                        else
+                        {
+                        <div class="price">$@ViewBag.menu.Price</div>  
+                        }
+               <input type="number" asp-for="Quantity" value="1" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" >
             </div>
-             <div class="details">@Model.Detailes</div>
+             <div class="details">@ViewBag.menu.Detailes</div>
             <div class="flex-btn">
                <button type="submit" class="btn" name="add_to_cart">Add To Cart </button>
-               <a class="option-btn" asp-action="AddToWishList" asp-controller="WishList" asp-route-Id="@Model.Id" name="add_to_wishlist" style="text-decoration:none">add to wishlist</a>
+               <a class="option-btn" asp-action="AddToWishList" asp-controller="WishList" asp-route-Id="@ViewBag.menu.Id" name="add_to_wishlist" style="text-decoration:none">add to wishlist</a>
             </div>
-         </div>
-      </div>
-   </form>
+          </div>
+        </div>
+  </form>
+  <div class="col-12" style="font-size:16px">   
+       @foreach(var item in ViewBag.listComment)
+        {
+            <hr />
+            <div class="row">
+                <div class="col-6">
+                   <i class="text-primary mr-2">@item.UserName</i>
+                   <i class="text-primary">@item.Date</i>
+                   @if(User.Identity.Name is not null)
+                   {
+                        @if(@User.IsInRole(Roles.adminrole)||User.Identity.Name.Equals(@item.UserName))
+                        {
+                             <a asp-action="Delete" asp-controller="Comments" asp-route-commentId="@item.Id" asp-route-productID="@ViewBag.menu.Id" style="font-size:16px;margin-left:3rem;color:red;text-decoration-line:none">X</a>
+                        }
+                   }                
+                   <div class="mt-2">
+                    @for(var i=1;i<=item.Rating;i++)
+                    {
+                        <span class="starGlowN"></span>
+                    }
+                    @for(var i=(item.Rating+1);i<=5;i++)
+                    {                    
+                        <span class="starFadeN"></span>
+                    }
+                   </div>
+                </div>               
+            </div>
+            <div class="col-6 mt-2">@item.Comments</div>
+        }
+        <hr />  
+   </div>
+     <nav class="...">
+            @if(pager.TotalPages>0)
+            {
+                <ul class="pagination justify-content-center pagination-lg">
+                    @if(pager.CurrentPage>1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link"asp-action="ShowDetailes" asp-controller="ShowMenu" asp-route-pg="1">Frist</a>
+                        </li>  
+                        <li>
+                            <a class="page-link"asp-action="ShowDetailes" asp-controller="ShowMenu" asp-route-pg="@(pager.CurrentPage-1)">Previous</a>
+                        </li>
+                    }
+                    @for(var pge =pager.StartPage;pge <= pager.EndPage;pge++)
+                    {
+                        <li class="page-item" @(pge==pager.CurrentPage? "active" :"")>
+                            <a class="page-link"asp-action="ShowDetailes" asp-controller="ShowMenu" asp-route-pg="@pge">@pge</a>
+                        </li>
+                    }
+                    @if(pager.CurrentPage<pager.TotalPages)
+                    {
+                       <li class="page-item">
+                            <a class="page-link"asp-action="ShowDetailes" asp-controller="ShowMenu" asp-route-pg="@(pager.CurrentPage+1)">Next</a>
+                        </li> 
+                        <li class="page-item">
+                            <a class="page-link"asp-action="ShowDetailes" asp-controller="ShowMenu" asp-route-pg="@(pager.TotalPages)">Last</a>
+                        </li> 
+                    }
 
+                </ul>
+            }
+        </nav>
+   <div class="col-4">
+       <partial name="_CommentBox" view-data="ViewData"/>
+   </div>
+      
 </section>
-
+     <style>
+        .dl-horizontal dt{
+            white-space:normal;
+        }
+        input,
+        select,
+        textarea{
+            max-width:280px;
+        }
+        .commentBox{
+            background-color:#efefef;
+            padding:10px;
+            border-radius:10px;
+            font-size:16px
+        }
+        .starFade{
+            background-image:url('/Images/starfade.png');
+            background-repeat:no-repeat;
+            min-width:30px;
+            min-height:30px;
+            display:inline-block;
+            cursor:pointer
+        }
+        .starFadeN{
+            background-image:url('/Images/starfade.png');
+            background-repeat:no-repeat;
+            min-width:30px;
+            min-height:30px;
+            display:inline-block;
+        }
+        .starGlow{
+            background-image:url('/Images/starglow.png');
+            background-repeat:no-repeat;
+            min-width:30px;
+            min-height:30px;
+            display:inline-block;
+            cursor:pointer
+        }
+        .starGlowN{
+            background-image:url('/Images/starglow.png');
+            background-repeat:no-repeat;
+            min-width:30px;
+            min-height:30px;
+            display:inline-block;
+        }
+    </style>
 @section Scripts{
     <partial name="_ValidationScriptsPartial" />
 }

@@ -24,21 +24,20 @@ namespace E_Commerce_Website.BL.Repositories
             this.context = context;
             this._hosting = hosting;
         }
-        public async Task<Menus> add(ProductViewModel productViewModel,string name)
+        public async Task<Menus> add(ProductViewModel productViewModel, string name)
         {
             try
             {
                 if (productViewModel is not null && name is not null)
                 {
-                    Random rnd=new Random();
+                    Random rnd = new Random();
                     string filename = string.Empty;
                     string filename2 = string.Empty;
-                    string filename3 = string.Empty;
                     if (productViewModel.File is not null)
                     {
                         string uploads = Path.Combine(_hosting.WebRootPath, ("uploaded_img"));
                         filename = Guid.NewGuid().ToString() + "_" + productViewModel.File.FileName;
-                        string fullpath =Path.Combine(uploads, filename);
+                        string fullpath = Path.Combine(uploads, filename);
                         productViewModel.File.CopyTo(new FileStream(fullpath, FileMode.Create));
                     }
                     if (productViewModel.File2 is not null)
@@ -48,21 +47,15 @@ namespace E_Commerce_Website.BL.Repositories
                         string fullpath = Path.Combine(uploads, filename2);
                         productViewModel.File2.CopyTo(new FileStream(fullpath, FileMode.Create));
                     }
-                    if (productViewModel.File3 is not null)
-                    {
-                        string uploads = Path.Combine(_hosting.WebRootPath, ("uploaded_img"));
-                        filename3 = Guid.NewGuid().ToString() + "_" + productViewModel.File3.FileName;
-                        string fullpath = Path.Combine(uploads, filename3);
-                        productViewModel.File3.CopyTo(new FileStream(fullpath, FileMode.Create));
-                    }
+
                     Menus menu = new Menus()
                     {
                         Name = productViewModel.Name,
                         Price = productViewModel.Price,
+                        Discount = productViewModel.Discount,
                         Detailes = productViewModel.Detailes,
                         imgpath = filename,
-                        imgpath2 = filename2,
-                        imgpath3 = filename3,
+                        VideoPath = filename2,
                         CategoryId = productViewModel.CategoryId,
                         UserName = name
                     };
@@ -76,13 +69,13 @@ namespace E_Commerce_Website.BL.Repositories
             }
         }
 
-        public async Task<int> Delete(int id,string name)
+        public async Task<int> Delete(int id, string name)
         {
             try
             {
-                if (id > 0&& name is not null)
+                if (id > 0 && name is not null)
                 {
-                    return await genericRepository.delete(id,name);
+                    int result= await genericRepository.delete(id, name);
                 }
                 return 0;
             }
@@ -147,9 +140,9 @@ namespace E_Commerce_Website.BL.Repositories
                             Name = result.Name,
                             Id = result.Id,
                             Price = result.Price,
-                            imgpath = result.imgpath,
-                            imgpath2 = result.imgpath2,
-                            imgpath3 = result.imgpath3,
+                            Discount = result.Discount,
+                            imgpath1 = result.imgpath,
+                            VideoPath = result.VideoPath,
                             Detailes = result.Detailes,
                             CategoryId = result.CategoryId
                         };
@@ -181,13 +174,13 @@ namespace E_Commerce_Website.BL.Repositories
             }
         }
 
-        public async Task<int> RestoreProduct(int id,string name)
+        public async Task<int> RestoreProduct(int id, string name)
         {
             try
             {
                 if (id > 0 && name is not null)
                 {
-                    return await genericRepository.Restordeleted(id,name);
+                    return await genericRepository.Restordeleted(id, name);
                 }
                 return 0;
             }
@@ -197,7 +190,7 @@ namespace E_Commerce_Website.BL.Repositories
             }
         }
 
-        public void Update(ProductUpdateViewModel productUpdateViewModel,string name)
+        public async Task Update(ProductUpdateViewModel productUpdateViewModel, string name)
         {
             try
             {
@@ -205,19 +198,23 @@ namespace E_Commerce_Website.BL.Repositories
                 {
                     string filename = string.Empty;
                     string filename2 = string.Empty;
-                    string filename3 = string.Empty;
 
                     Menus oldobj = context.Menus.Where(o => o.IsDeleted == false).Where(o => o.Id == productUpdateViewModel.Id).FirstOrDefault();
                     if (productUpdateViewModel.File is not null)
                     {
                         string uploads = Path.Combine(_hosting.WebRootPath, ("uploaded_img"));
-                        filename = Guid.NewGuid().ToString() + "_" +productUpdateViewModel.File.FileName;
+                        filename = Guid.NewGuid().ToString() + "_" + productUpdateViewModel.File.FileName;
                         string fullpath = Path.Combine(uploads, filename);
                         if (oldobj.imgpath is not null)
                         {
                             string oldfilename = oldobj.imgpath;
                             string oldfullpath = Path.Combine(uploads, oldfilename);
+                            FileInfo fi = new FileInfo(Path.Combine(oldfullpath, oldfilename));
                             System.IO.File.Delete(oldfullpath);
+                            if (fi.Exists)
+                            {
+                                fi.Delete();
+                            }
                         }
                         productUpdateViewModel.File.CopyTo(new FileStream(fullpath, FileMode.Create));
                     }
@@ -228,49 +225,48 @@ namespace E_Commerce_Website.BL.Repositories
                     if (productUpdateViewModel.File2 is not null)
                     {
                         string uploads = Path.Combine(_hosting.WebRootPath, ("uploaded_img"));
-                        filename2 = Guid.NewGuid().ToString() + "_" +productUpdateViewModel.File2.FileName;
+                        filename2 = Guid.NewGuid().ToString() + "_" + productUpdateViewModel.File2.FileName;
                         string fullpath = Path.Combine(uploads, filename2);
-                        if (oldobj.imgpath2 != null)
+                        if (oldobj.VideoPath != null)
                         {
-                            string oldfilename = oldobj.imgpath2;
+                            string oldfilename = oldobj.VideoPath;
                             string oldfullpath = Path.Combine(uploads, oldfilename);
+                            FileInfo fi = new FileInfo(Path.Combine(oldfullpath, oldfilename));
                             System.IO.File.Delete(oldfullpath);
+                            if (fi.Exists)
+                            {
+                                fi.Delete();
+                            }
                         }
                         productUpdateViewModel.File2.CopyTo(new FileStream(fullpath, FileMode.Create));
                     }
                     else
                     {
-                        filename2 = oldobj.imgpath2;
-                    }
-                    if (productUpdateViewModel.File3 is not null)
-                    {
-                        string uploads = Path.Combine(_hosting.WebRootPath, ("uploaded_img"));
-                        filename3 = Guid.NewGuid().ToString() + "_" +productUpdateViewModel.File3.FileName;
-                        string fullpath = Path.Combine(uploads, filename3);
-                        if (oldobj.imgpath3 is not null)
-                        {
-                            string oldfilename = oldobj.imgpath3;
-                            string oldfullpath = Path.Combine(uploads, oldfilename);
-                            System.IO.File.Delete(oldfullpath);
-                        }
-                        productUpdateViewModel.File3.CopyTo(new FileStream(fullpath, FileMode.Create));
-                    }
-                    else
-                    {
-                        filename3 = oldobj.imgpath3;
-                    }
-                    if (context.Menus.Where(s => s.Id != oldobj.Id).Where(s => s.Name == productUpdateViewModel.Name).Count() > 0)
-                    {
-                        throw new ArgumentNullException();
+                        filename2 = oldobj.VideoPath;
                     }
                     oldobj.Name = productUpdateViewModel.Name;
                     oldobj.Price = productUpdateViewModel.Price;
+                    oldobj.Discount = productUpdateViewModel.Discount;
                     oldobj.Detailes = productUpdateViewModel.Detailes;
                     oldobj.imgpath = filename;
-                    oldobj.imgpath2 = filename2;
-                    oldobj.imgpath3 = filename3;
+                    oldobj.VideoPath = filename2;
                     oldobj.CategoryId = productUpdateViewModel.CategoryId;
-                    genericRepository.update(oldobj,name);
+                    var result= await genericRepository.update(oldobj, name);
+                    if(result is not null)
+                    {
+                        Cart cartUpdatedItem=await context.Carts.Where(o => o.Ordername.Equals(oldobj.Name)).FirstOrDefaultAsync();
+                        if(cartUpdatedItem is not null)
+                        {
+                            context.Carts.Remove(cartUpdatedItem);
+                            await context.SaveChangesAsync();
+                        }
+                        var wishListUpdatedItem =await context.WishLists.Where(o => o.Ordername.Equals(oldobj.Name)).FirstOrDefaultAsync();
+                        if (wishListUpdatedItem is not null)
+                        {
+                          context.WishLists.Remove(wishListUpdatedItem);
+                          await  context.SaveChangesAsync();
+                        }
+                    }
                 }
             }
             catch
@@ -278,6 +274,6 @@ namespace E_Commerce_Website.BL.Repositories
                 throw;
             }
         }
-        
+
     }
 }

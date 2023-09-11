@@ -5,6 +5,7 @@ using E_Commerce_Website.DAL;
 using E_Commerce_Website.DAL.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -50,7 +51,12 @@ namespace E_Commerce_Website
                 options.SignIn.RequireConfirmedEmail = true;
             }).AddEntityFrameworkStores<EntityContext>()
                        .AddTokenProvider<DataProtectorTokenProvider<ApplicationUser>>(TokenOptions.DefaultProvider);
+            services.Configure<FormOptions>(options =>
+            {
+                options.ValueLengthLimit = int.MaxValue;
+                options.MultipartBodyLengthLimit = int.MaxValue;
 
+            });
             // Add services
             var emailConfig = Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
             services.AddSingleton(emailConfig);
@@ -63,6 +69,8 @@ namespace E_Commerce_Website
             services.AddScoped(typeof(IServiceWishList), typeof(ServiceWishList));
             services.AddScoped(typeof(IServiceOrder), typeof(ServiceOrder));
             services.AddScoped(typeof(IServiceFinishOrder), typeof(ServiceFinishedOrders));
+            services.AddScoped(typeof(IServiceComments), typeof(ServiceComments));
+
             //end services
         }
 

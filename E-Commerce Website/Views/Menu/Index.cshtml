@@ -37,10 +37,11 @@
                     <th>Code</th>
                     <th>Name</th>
                     <th>Price</th>
+                    <th>Discount</th>
+                    <th>Price After Discount</th>
                     <th>Detailes</th>
                     <th>Image</th>
-                    <th>Image 2</th>
-                    <th>Image 3</th>
+                    <th>Video</th>
                     <th>Category Code</th>
                     <th>Is Deleted</th>
                     <th>UserName</th>
@@ -58,16 +59,24 @@
                         <td>@itm.Id</td>
                         <td>@itm.Name</td>
                         <td>@itm.Price</td>
+                        <td>@itm.Discount</td>
+                        @if(@itm.Discount>0)
+                        {
+                          <td>@itm.DiscountPrice</td>
+                        }
+                        else
+                        {
+                            <td>@itm.Price</td> 
+                        }
                         <td>@itm.Detailes</td>
                         <td>
                             <img src="~/uploaded_img/@itm.imgpath" style="width:64px" class="img-thumbnail">
                         </td>
                         <td>
-                            <img src="~/uploaded_img/@itm.imgpath2" style="width:64px" class="img-thumbnail">
-                        </td>
-                        <td>
-                            <img src="~/uploaded_img/@itm.imgpath3" style="width:64px" class="img-thumbnail">
-                        </td>
+                            <video width="64" height="64" controls loop>
+                              <source src="~/uploaded_img/@itm.VideoPath" type="video/mp4">
+                           </video>
+                        </td>                     
                         <td>@itm.CategoryId</td>
                         <td>@itm.IsDeleted</td>
                         <td>@itm.UserName</td>

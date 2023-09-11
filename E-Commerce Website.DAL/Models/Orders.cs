@@ -15,7 +15,7 @@ namespace E_Commerce_Website.DAL.Models
         [Required]
         public string OrderDetails { get; set; }
         [Required]
-        public double TotalPrice { get; set; }
+        public decimal TotalPrice { get; set; }
         public DateTime Date { get; set; } = DateTime.Now;
         [Required]
         public string AddressDetailes { get; set; }

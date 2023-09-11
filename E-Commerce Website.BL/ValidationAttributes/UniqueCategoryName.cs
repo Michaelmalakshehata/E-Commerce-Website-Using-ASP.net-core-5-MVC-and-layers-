@@ -16,7 +16,7 @@ namespace E_Commerce_Website.BL.ValidationAttributes
             if (value is null)
                 return null;
             string newname = value.ToString();
-            if (context.Categories.FirstOrDefault(s => s.Name == newname) is not null)
+            if (context.Categories.FirstOrDefault(s => s.Name.Equals(newname)) is not null)
             {
                 return new ValidationResult("Name Already Exist in Categories or restore it from deleted");
             }

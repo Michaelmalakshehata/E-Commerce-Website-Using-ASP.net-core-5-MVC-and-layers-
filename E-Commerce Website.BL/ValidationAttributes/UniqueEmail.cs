@@ -16,7 +16,7 @@ namespace E_Commerce_Website.BL.ValidationAttributes
             if (value is null)
                 return null;
             string newemail = value.ToString();
-            var Email = context.Users.FirstOrDefault(s => s.Email == newemail);
+            var Email = context.Users.FirstOrDefault(s => s.Email.Equals(newemail));
             if (Email is not null)
             {
                 return new ValidationResult("Email Already Exist");

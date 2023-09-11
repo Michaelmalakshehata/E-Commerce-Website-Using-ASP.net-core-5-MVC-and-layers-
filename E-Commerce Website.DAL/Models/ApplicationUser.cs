@@ -16,6 +16,6 @@ namespace E_Commerce_Website.DAL.Models
         public virtual ICollection<Orders> orders { get; set; }
         public virtual ICollection<Cart> Carts { get; set; }
         public virtual ICollection<WishList> WishLists { get; set; }
-
+        public virtual ICollection<Comments> Comments { get; set; }
     }
 }

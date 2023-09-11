@@ -20,14 +20,27 @@
      <form asp-action="AddToCart"asp-controller="Cart" class="box">
             <input type="hidden" asp-for="Ordername" value="@item.Ordername" />
             <input type="hidden" asp-for="Price" value="@item.Price"/>
+            <input type="hidden" asp-for="Discount" value="@item.Discount"/>
             <input type="hidden" asp-for="imgpath" value="@item.imgpath"/>
          <a class="fas fa-heart" asp-action="AddToWishList" asp-controller="WishList" asp-route-Id="@item.MenuId" name="add_to_wishlist"></a>
          <a asp-action="ShowDetailes" asp-controller="ShowMenu" asp-route-Id="@item.MenuId" class="fas fa-eye"></a>
       <img src="~/uploaded_img/@item.imgpath" alt="">
       <div class="name">@item.Ordername</div>
+      @if(item.DiscountPrice >0){
+            <div class="text-warning" style="text-decoration:line-through;text-decoration-color:red;font-size:16px">$@item.Price</div>
+            <div class="text-primary" style="font-size:16px">%@item.Discount Off</div>                         
+            }
       <div class="flex">
-         <div class="price"><span>$</span>@item.Price<span></span></div>
-         <input type="number" asp-for="Quantity" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                        
+        @if(item.DiscountPrice ==0)
+        {
+        <div class="price">$@item.Price</div>  
+        }
+        else
+        {
+            <div class="price">$@item.DiscountPrice</div>
+        }
+       <input type="number" asp-for="Quantity" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
       </div>
       <button type="submit" class="btn" name="add_to_cart">Add To Cart </button>
    </form>

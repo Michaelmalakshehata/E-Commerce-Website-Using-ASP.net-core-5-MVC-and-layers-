@@ -11,16 +11,29 @@ namespace E_Commerce_Website.DAL.Models
     public class Menus : BaseModel
     {
         [Required]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
         [Required]
         public string imgpath { get; set; }
         [Required]
-        public string imgpath2 { get; set; }
-        [Required]
-        public string imgpath3 { get; set; }
+        public string VideoPath { get; set; }
+        public decimal DiscountPrice
+        {
+
+            get
+            {
+                if (Discount > 0)
+                {
+                    return Price - (Price * (Discount / 100));
+                }
+                return 0;
+            }
+        }
+        public decimal Discount { get; set; }
         [Required]
         public string Detailes { get; set; }
         public int CategoryId { get; set; }
         public virtual Categories Categories { get; set; }
+        public virtual ICollection<Comments> Comments { get; set; }
+
     }
 }

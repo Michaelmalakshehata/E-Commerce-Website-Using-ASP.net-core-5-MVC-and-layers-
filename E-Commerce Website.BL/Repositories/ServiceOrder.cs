@@ -37,7 +37,7 @@ namespace E_Commerce_Website.BL.Repositories
                         {
                             orderdetails =orderdetails.Append("Order " + i++ + " := " + item.ToString() + " _  ");
                         }
-                        double price = await totalprice(order.Username);
+                        decimal price = await totalprice(order.Username);
                         Orders orders = new Orders()
                         {
                             AddressDetailes = order.Address,
@@ -80,7 +80,7 @@ namespace E_Commerce_Website.BL.Repositories
             {
                 if (Name is not null)
                 {
-                    string userid = await context.Users.Where(u => u.UserName == Name).Select(u => u.Id).FirstOrDefaultAsync();
+                    string userid = await context.Users.Where(u => u.UserName.Equals( Name)).Select(u => u.Id).FirstOrDefaultAsync();
                     if (userid is not null)
                     {
                         List<string> cartitem = await OrderDetailes(Name);
@@ -130,7 +130,7 @@ namespace E_Commerce_Website.BL.Repositories
             {
                 if (Name is not null)
                 {
-                    return await context.Orders.Where(o => o.Username == Name).FirstOrDefaultAsync();
+                    return await context.Orders.Where(o => o.Username.Equals(Name)).FirstOrDefaultAsync();
                 }
                 return new Orders();
             }
@@ -146,7 +146,7 @@ namespace E_Commerce_Website.BL.Repositories
             {
                 if (Name is not null)
                 {
-                    string userid = await context.Users.Where(u => u.UserName == Name).Select(u => u.Id).FirstOrDefaultAsync();
+                    string userid = await context.Users.Where(u => u.UserName.Equals(Name)).Select(u => u.Id).FirstOrDefaultAsync();
                     if (userid is not null)
                     {
                         List<Cart> carts = await context.Carts.Where(o => o.UserId == userid).ToListAsync();
@@ -170,7 +170,7 @@ namespace E_Commerce_Website.BL.Repositories
             }
         }
 
-        public Task<double> totalprice(string name)
+        public Task<decimal> totalprice(string name)
         {
             try
             {

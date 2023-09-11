@@ -68,7 +68,7 @@ namespace E_Commerce_Website.BL.Repositories
             {
                 if (name is not null)
                 {
-                    return await context.FinishedOrders.Where(o => o.Username == name).ToListAsync();
+                    return await context.FinishedOrders.Where(o => o.Username.Equals(name)).ToListAsync();
                 }
                 return new List<FinishedOrders>();
             }

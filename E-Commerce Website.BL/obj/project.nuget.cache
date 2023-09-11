@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cl3vQTajlqps2dnqHpK2CBz9U4v6GdRyuvy9nndF1FB5PG3prGyu3Jfg2fbil7xjYwDFB+zyWVv/c9aXDgOGPA==",
+  "dgSpecHash": "I7CU3TcJmkP8Pn3GJ/rGxhOnZbcp0k2ZVG6lRoiAnxMTz9YuLPhR6JA9wZBjrxRNG7YWcT9Cdj59I9OLT6lRsQ==",
   "success": true,
-  "projectFilePath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj",
+  "projectFilePath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NoteBook\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\NoteBook\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

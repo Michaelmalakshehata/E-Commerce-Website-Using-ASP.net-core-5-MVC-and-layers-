@@ -25,10 +25,10 @@ namespace E_Commerce_Website.BL.Repositories
                 if (Id != 0 && name is not null)
                 {
                     Menus product = await context.Menus.Where(o => o.IsDeleted == false).Where(o => o.Id == Id).FirstOrDefaultAsync();
-                    string existinwishlist = await context.WishLists.Where(o => o.Ordername == product.Name).Select(o => o.Ordername).FirstOrDefaultAsync();
+                    string existinwishlist = await context.WishLists.Where(o => o.Ordername.Equals(product.Name)).Select(o => o.Ordername).FirstOrDefaultAsync();
                     if (existinwishlist is null)
                     {
-                        string userid = await context.Users.Where(o => o.UserName == name).Select(o => o.Id).FirstOrDefaultAsync();
+                        string userid = await context.Users.Where(o => o.UserName.Equals(name)).Select(o => o.Id).FirstOrDefaultAsync();
                         if (userid is not null && product is not null)
                         {
                             WishList wishList = new WishList()
@@ -36,6 +36,7 @@ namespace E_Commerce_Website.BL.Repositories
                                 Ordername = product.Name,
                                 imgpath = product.imgpath,
                                 Price = product.Price,
+                                Discount = product.Discount,
                                 UserId = userid
                             };
                             await context.AddAsync(wishList);
@@ -64,7 +65,7 @@ namespace E_Commerce_Website.BL.Repositories
             {
                 if (name is not null)
                 {
-                    var id = context.Users.Where(o => o.UserName == name).Select(o => o.Id).FirstOrDefault();
+                    var id = context.Users.Where(o => o.UserName.Equals(name)).Select(o => o.Id).FirstOrDefault();
                     if (id is not null)
                     {
                         var listwishlist = context.WishLists.Where(o => o.UserId == id).ToList();
@@ -114,17 +115,17 @@ namespace E_Commerce_Website.BL.Repositories
             {
                 if (Name is not null)
                 {
-                    string userid = await context.Users.Where(u => u.UserName == Name).Select(u => u.Id).FirstOrDefaultAsync();
+                    string userid = await context.Users.Where(u => u.UserName.Equals(Name)).Select(u => u.Id).FirstOrDefaultAsync();
                     if (userid is not null)
                     {
-                        List<WishList> wishLists = await context.WishLists.Where(o => o.UserId == userid).ToListAsync();
+                        List<WishList> wishLists = await context.WishLists.Where(o => o.UserId.Equals(userid)).ToListAsync();
 
                         if (wishLists is not null)
                         {
                             List<WishList> listwishList = new List<WishList>();
                             foreach (var itm in wishLists)
                             {
-                                if (await context.Menus.Where(o => o.IsDeleted == false).Where(o => o.Name == itm.Ordername).FirstOrDefaultAsync() == null)
+                                if (await context.Menus.Where(o => o.IsDeleted == false).Where(o => o.Name.Equals(itm.Ordername)).FirstOrDefaultAsync() == null)
                                 {
                                     await DeleteWishListItem(itm.Id, Name);
                                     continue;
@@ -153,7 +154,7 @@ namespace E_Commerce_Website.BL.Repositories
             if (name is not null)
             {
                 var id = await context.Users.Where(o => o.UserName.Equals(name)).Select(o => o.Id).FirstOrDefaultAsync();
-                int number = await context.WishLists.Where(o => o.UserId == id).CountAsync();
+                int number = await context.WishLists.Where(o => o.UserId.Equals(id)).CountAsync();
                 return number;
             }
             return 0;

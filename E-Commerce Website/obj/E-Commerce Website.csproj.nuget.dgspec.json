@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website\\E-Commerce Website.csproj": {}
+    "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website\\E-Commerce Website.csproj": {}
   },
   "projects": {
-    "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj": {
+    "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj",
+        "projectUniqueName": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj",
         "projectName": "E-Commerce Website.BL",
-        "projectPath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj",
+        "projectPath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj",
         "packagesPath": "C:\\Users\\NoteBook\\.nuget\\packages\\",
-        "outputPath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.BL\\obj\\",
+        "outputPath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -34,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj": {
-                "projectPath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj"
+              "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj": {
+                "projectPath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj"
               }
             }
           }
@@ -114,14 +114,14 @@
         }
       }
     },
-    "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj": {
+    "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj",
+        "projectUniqueName": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj",
         "projectName": "E-Commerce Website.DAL",
-        "projectPath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj",
+        "projectPath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj",
         "packagesPath": "C:\\Users\\NoteBook\\.nuget\\packages\\",
-        "outputPath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.DAL\\obj\\",
+        "outputPath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -216,14 +216,14 @@
         }
       }
     },
-    "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website\\E-Commerce Website.csproj": {
+    "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website\\E-Commerce Website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website\\E-Commerce Website.csproj",
+        "projectUniqueName": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website\\E-Commerce Website.csproj",
         "projectName": "E-Commerce Website",
-        "projectPath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website\\E-Commerce Website.csproj",
+        "projectPath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website\\E-Commerce Website.csproj",
         "packagesPath": "C:\\Users\\NoteBook\\.nuget\\packages\\",
-        "outputPath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website\\obj\\",
+        "outputPath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -246,11 +246,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj": {
-                "projectPath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj"
+              "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj": {
+                "projectPath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.BL\\E-Commerce Website.BL.csproj"
               },
-              "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj": {
-                "projectPath": "F:\\Important\\github\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj"
+              "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj": {
+                "projectPath": "F:\\New folder\\E-Commerce Website.PL\\E-Commerce Website.DAL\\E-Commerce Website.DAL.csproj"
               }
             }
           }

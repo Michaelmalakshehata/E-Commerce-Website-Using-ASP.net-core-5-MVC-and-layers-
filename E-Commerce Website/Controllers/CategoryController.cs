@@ -109,8 +109,8 @@ namespace E_Commerce_Website.Controllers
             [HttpGet]
             public async Task<IActionResult> DeleteCategory(int Id)
             {
-            var name = User.Identity.Name;
-            await serviceCategory.Delete(Id,name);
+                var name = User.Identity.Name;
+                await serviceCategory.Delete(Id,name);
                 return RedirectToAction("Index");
             }
 
@@ -122,8 +122,8 @@ namespace E_Commerce_Website.Controllers
             [HttpGet]
             public async Task<IActionResult> RestoreCategory(int Id)
             {
-            var name = User.Identity.Name;
-            await serviceCategory.RestoreCategory(Id,name);
+                var name = User.Identity.Name;
+                await serviceCategory.RestoreCategory(Id,name);
                 return RedirectToAction("DeletedCategory");
             }
 

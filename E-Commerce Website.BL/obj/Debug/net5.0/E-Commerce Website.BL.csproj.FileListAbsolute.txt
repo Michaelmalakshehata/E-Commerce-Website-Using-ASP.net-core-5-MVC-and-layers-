@@ -88,3 +88,21 @@ F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.pdb
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.genruntimeconfig.cache
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\ref\E-Commerce Website.BL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.deps.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.runtimeconfig.dev.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.BL.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\bin\Debug\net5.0\E-Commerce Website.DAL.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.AssemblyReference.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.GeneratedMSBuildEditorConfig.editorconfig
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfoInputs.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.AssemblyInfo.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CoreCompileInputs.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.csproj.CopyComplete
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\refint\E-Commerce Website.BL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\E-Commerce Website.BL.genruntimeconfig.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.BL\obj\Debug\net5.0\ref\E-Commerce Website.BL.dll

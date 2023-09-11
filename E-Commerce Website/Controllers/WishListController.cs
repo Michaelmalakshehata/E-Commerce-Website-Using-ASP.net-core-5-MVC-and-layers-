@@ -62,8 +62,6 @@ namespace E_Commerce_Website.Controllers
             if (name is not null && Id != 0)
             {
                 await servicewishlist.DeleteWishListItem(Id, name);
-                return RedirectToAction("Index", "WishList");
-
             }
             return RedirectToAction("Index", "WishList");
         }
@@ -75,8 +73,6 @@ namespace E_Commerce_Website.Controllers
             if (name is not null)
             {
                 await servicewishlist.DeleteAllWishListItems(name);
-                return RedirectToAction("Index", "WishList");
-
             }
             return RedirectToAction("Index", "WishList");
         }

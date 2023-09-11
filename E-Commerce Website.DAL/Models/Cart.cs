@@ -19,13 +19,21 @@ namespace E_Commerce_Website.DAL.Models
         public string imgpath { get; set; }
 
         [Required]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
+        public decimal Discount { get; set; }
+
         [Required]
         public int Quantity { get; set; }
-        public double TotalPrice
+        public decimal TotalPrice
         {
+
             get
             {
+                if (Discount > 0)
+                {
+                    decimal priceDiscount = Price - (Price * (Discount / 100));
+                    return (Quantity * priceDiscount);
+                }
                 return Quantity * Price;
             }
         }

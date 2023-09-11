@@ -11,7 +11,7 @@ namespace E_Commerce_Website.BL.IRepositories
     public interface IServiceOrder
     {
         Task<OrderViewModel> CheckoutOrder(string name);
-        Task<double> totalprice(string name);
+        Task<decimal> totalprice(string name);
         Task AddOrder(OrderViewModel order);
         Task<Orders> Order(string name);
         Task<List<Orders>> AllOrders();

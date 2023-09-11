@@ -73,3 +73,18 @@ F:\Important\github\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.pdb
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.genruntimeconfig.cache
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\ref\E-Commerce Website.DAL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\bin\Debug\net5.0\E-Commerce Website.DAL.deps.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\bin\Debug\net5.0\E-Commerce Website.DAL.runtimeconfig.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\bin\Debug\net5.0\E-Commerce Website.DAL.runtimeconfig.dev.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\bin\Debug\net5.0\E-Commerce Website.DAL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\bin\Debug\net5.0\E-Commerce Website.DAL.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.csproj.AssemblyReference.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.AssemblyInfoInputs.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.AssemblyInfo.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.csproj.CoreCompileInputs.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\refint\E-Commerce Website.DAL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\E-Commerce Website.DAL.genruntimeconfig.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website.DAL\obj\Debug\net5.0\ref\E-Commerce Website.DAL.dll

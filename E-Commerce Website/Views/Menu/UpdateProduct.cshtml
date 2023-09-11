@@ -25,34 +25,31 @@
            <input type="number" asp-for="Price" min="1" class="box" >
        </div>
        <div class="input-group">
+           <label asp-for="Discount" style="font-size:15px"></label>
+           <input type="number" asp-for="Discount" min="1" class="box" >
+       </div>
+       <div class="input-group">
            <label asp-for="Detailes" style="font-size:15px"></label>
            <textarea type="text" asp-for="Detailes" maxlength="100" minlength="5" placeholder="enter detailes" class="box"></textarea>
        </div>
        <div class="input-group">
            <label asp-for="File" style="font-size:15px"></label>
            <input type="file"accept="image/*"  asp-for="File" class="box" >
-           @if(@Model.imgpath!=null)
+           @if(@Model.imgpath1!=null)
             
                 {
-                    <img src="~/uploaded_img/@Model.imgpath" style="width:124px" class="img-thumbnail" />
+                    <img src="~/uploaded_img/@Model.imgpath1" style="width:124px" class="img-thumbnail" />
                 }
        </div>
        <div class="input-group">
            <label asp-for="File2" style="font-size:15px"></label>
-           <input type="file"accept="image/*"  asp-for="File2" class="box" >
-           @if(@Model.imgpath2!=null)
+           <input type="file"accept="video/*"  asp-for="File2" class="box" >
+           @if(@Model.VideoPath!=null)
             
                 {
-                    <img src="~/uploaded_img/@Model.imgpath2" style="width:124px" class="img-thumbnail" />
-                }
-       </div>
-       <div class="input-group">
-           <label asp-for="File3" style="font-size:15px"></label>
-           <input type="file"accept="image/*"  asp-for="File3" class="box" >
-           @if(@Model.imgpath3!=null)
-            
-                {
-                    <img src="~/uploaded_img/@Model.imgpath3" style="width:124px" class="img-thumbnail" />
+                    <video width="64" height="64" controls loop>
+                        <source src="~/uploaded_img/@Model.VideoPath" type="video/mp4">
+                    </video>
                 }
        </div>
        <div class="input-group">

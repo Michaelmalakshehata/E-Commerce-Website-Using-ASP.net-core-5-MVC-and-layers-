@@ -16,7 +16,7 @@ namespace E_Commerce_Website.BL.IRepositories
         Task<int> Delete(int id,string name);
         Task<int> RestoreProduct(int id,string name);
         Task<ProductUpdateViewModel> GetByid(int id);
-       void Update(ProductUpdateViewModel productUpdateViewModel,string name);
+       Task Update(ProductUpdateViewModel productUpdateViewModel,string name);
         Task<List<Menus>> GetProductByCategory(int id);
     }
 }

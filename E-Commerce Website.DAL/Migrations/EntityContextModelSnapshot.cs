@@ -95,12 +95,15 @@ namespace E_Commerce_Website.DAL.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("Ordername")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
@@ -154,6 +157,42 @@ namespace E_Commerce_Website.DAL.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("E_Commerce_Website.DAL.Models.Comments", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("MenuId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("E_Commerce_Website.DAL.Models.FinishedOrders", b =>
                 {
                     b.Property<int>("Id")
@@ -179,8 +218,8 @@ namespace E_Commerce_Website.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("TotalPrice")
-                        .HasColumnType("float");
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Username")
                         .IsRequired()
@@ -214,6 +253,9 @@ namespace E_Commerce_Website.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -221,8 +263,8 @@ namespace E_Commerce_Website.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime?>("RestoreDate")
                         .HasColumnType("datetime2");
@@ -234,15 +276,11 @@ namespace E_Commerce_Website.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("VideoPath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("imgpath")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("imgpath2")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("imgpath3")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -279,8 +317,8 @@ namespace E_Commerce_Website.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("TotalPrice")
-                        .HasColumnType("float");
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
@@ -303,12 +341,15 @@ namespace E_Commerce_Website.DAL.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("Ordername")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
@@ -465,6 +506,25 @@ namespace E_Commerce_Website.DAL.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("E_Commerce_Website.DAL.Models.Comments", b =>
+                {
+                    b.HasOne("E_Commerce_Website.DAL.Models.Menus", "Menus")
+                        .WithMany("Comments")
+                        .HasForeignKey("MenuId")
+                        .HasConstraintName("MenuComments")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("E_Commerce_Website.DAL.Models.ApplicationUser", "User")
+                        .WithMany("Comments")
+                        .HasForeignKey("UserId")
+                        .HasConstraintName("UserComments");
+
+                    b.Navigation("Menus");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("E_Commerce_Website.DAL.Models.Menus", b =>
                 {
                     b.HasOne("E_Commerce_Website.DAL.Models.Categories", "Categories")
@@ -552,6 +612,8 @@ namespace E_Commerce_Website.DAL.Migrations
                 {
                     b.Navigation("Carts");
 
+                    b.Navigation("Comments");
+
                     b.Navigation("orders");
 
                     b.Navigation("WishLists");
@@ -560,6 +622,11 @@ namespace E_Commerce_Website.DAL.Migrations
             modelBuilder.Entity("E_Commerce_Website.DAL.Models.Categories", b =>
                 {
                     b.Navigation("Menus");
+                });
+
+            modelBuilder.Entity("E_Commerce_Website.DAL.Models.Menus", b =>
+                {
+                    b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618
         }

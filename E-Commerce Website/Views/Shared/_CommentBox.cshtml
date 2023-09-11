@@ -1,0 +1,89 @@
+﻿@model CommentViewModel
+
+ <dl class="dl-horizontal">
+            <dt style="font-size:25px;font-weight:700">
+                Comment
+            </dt>
+            <dd>
+              <div class="commentBox">
+                 
+                    <form asp-action="Add" asp-controller="Comments" onsubmit="return SubmitComment()">
+                         <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class=" control-label mb-2">Rating This Product
+                                </label>
+                                <div class="col-md-7">
+                                    <div onmouseout="CRateSelected()">
+                                        <span class="starFade" id="Rate1" onclick="CRate(1)" onmouseover="CRateOver(1)" onmouseout="CRateOut(1)"></span>
+                                        <span class="starFade" id="Rate2" onclick="CRate(2)" onmouseover="CRateOver(2)" onmouseout="CRateOut(2)"></span>
+                                        <span class="starFade" id="Rate3" onclick="CRate(3)" onmouseover="CRateOver(3)" onmouseout="CRateOut(3)"></span>
+                                        <span class="starFade" id="Rate4" onclick="CRate(4)" onmouseover="CRateOver(4)" onmouseout="CRateOut(4)"></span>
+                                        <span class="starFade" id="Rate5" onclick="CRate(5)" onmouseover="CRateOver(5)" onmouseout="CRateOut(5)"></span>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="col-12">
+                               <textarea asp-for="Comments" required rows="5" style="width:100%;font-size:16px" class="form-control"></textarea>
+                             </div>
+                         </div>
+                        <input type="hidden" asp-for="ProductId"value="@ViewData["ProductId"]"/>
+                        <input type="hidden" name="Rating" id="Rating" value="0" />
+                        
+                        <button type="submit" id="btnRegister" name="btnRegister" class="btn col-8">Add Comment </button>
+                    </form>
+              </div>
+            </dd>
+        </dl>
+    <script>
+        function SubmitComment()
+        {
+            if ($("#Rating").val() == "0") 
+            {
+                alert("Please Rate this Product");
+                return false;
+            }
+            else 
+            {
+                return true;
+            }
+        }
+        function CRate(r) 
+        {
+            $("#Rating").val(r);
+            for (var i = 1; i <= r;i++)
+            {
+                $("#Rate" + i).attr('class', 'starGlow');
+            }
+            for (var i =r+ 1; i <= 5;i++)
+            {
+                $("#Rate" + i).attr('class', 'starFade');
+            }
+        }
+       function CRateOver(r) 
+       {
+            for (var i = 1; i <= r;i++)
+            {
+                $("#Rate" + i).attr('class', 'starGlow');
+            }
+        }
+         function CRateOut(r) 
+         {
+            for (var i = 1; i <= r;i++)
+            {
+                $("#Rate" + i).attr('class', 'starFade');
+            }
+        }
+         function CRateSelected(r) 
+         {
+             var setRating = $("#Rating").val();
+            for (var i = 1; i <= setRating;i++)
+            {
+                $("#Rate" + i).attr('class', 'starGlow');
+            }
+        }
+    </script>
+    @section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+   } 

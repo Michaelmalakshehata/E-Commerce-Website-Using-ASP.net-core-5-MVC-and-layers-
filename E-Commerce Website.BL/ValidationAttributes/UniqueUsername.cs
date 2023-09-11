@@ -16,7 +16,7 @@ namespace E_Commerce_Website.BL.ValidationAttributes
             if (value is null)
                 return null;
             string newname = value.ToString();
-            var username = context.Users.FirstOrDefault(s => s.UserName == newname);
+            var username = context.Users.FirstOrDefault(s => s.UserName.Equals(newname));
             if (username is not null)
             {
                 return new ValidationResult("Username Already Exist");

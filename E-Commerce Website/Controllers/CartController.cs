@@ -21,13 +21,9 @@ namespace E_Commerce_Website.Controllers
             var carts = await serviceCart.GetAllUserCart(name);
             var data = Pagination<CartUpdateViewModel>.GetPaginationData(pg, carts);
             this.ViewBag.Pager = data.Item2;
-            double totalprice = await serviceCart.totalprice(name);
-            if (data.Item1 is not null && totalprice != 0)
-            {
-                ViewBag.price = totalprice;
-                ViewBag.list = data.Item1;
-                return View();
-            }
+            decimal totalprice = await serviceCart.totalprice(name);
+            ViewBag.price = totalprice;
+            ViewBag.list = data.Item1;
             return View();
         }
 
@@ -60,8 +56,6 @@ namespace E_Commerce_Website.Controllers
             if (ModelState.IsValid)
             {
                 await serviceCart.UpdateCartItem(cartUpdateViewModel);
-                return RedirectToAction("Index", "Cart");
-
             }
             return RedirectToAction("Index", "Cart");
         }
@@ -74,8 +68,6 @@ namespace E_Commerce_Website.Controllers
             if (Id != 0 && name is not null)
             {
                 await serviceCart.DeleteCartItem(Id,name);
-                return RedirectToAction("Index", "Cart");
-
             }
             return RedirectToAction("Index", "Cart");
         }
@@ -87,8 +79,6 @@ namespace E_Commerce_Website.Controllers
             if (name is not null)
             {
                 await serviceCart.DeleteAllCartItems(name);
-                return RedirectToAction("Index", "Cart");
-
             }
             return RedirectToAction("Index", "Cart");
         }

@@ -576,3 +576,127 @@ F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Ra
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs
 F:\Important\github\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\SuccessRegistration.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\web.config
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\appsettings.Development.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\appsettings.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\libman.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.exe
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.deps.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.runtimeconfig.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.runtimeconfig.dev.json
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.Views.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.Views.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\BouncyCastle.Cryptography.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Humanizer.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\MailKit.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\MimeKit.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\Newtonsoft.Json.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Formats.Asn1.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.IO.Pipelines.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\System.Text.Encoding.CodePages.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.BL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.DAL.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.BL.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\bin\Debug\net5.0\E-Commerce Website.DAL.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.csproj.AssemblyReference.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.GeneratedMSBuildEditorConfig.editorconfig
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.AssemblyInfoInputs.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.AssemblyInfo.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.csproj.CoreCompileInputs.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.MvcApplicationPartsAssemblyInfo.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorAssemblyInfo.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorAssemblyInfo.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\scopedcss\bundle\E-Commerce Website.styles.css
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\staticwebassets\E-Commerce Website.StaticWebAssets.Manifest.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.TagHelpers.input.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.TagHelpers.output.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorCoreGenerate.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ConfirmEmail.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\Error.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ForgotPassword.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ForgotPasswordConfirmation.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\Registration.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Category\CreateCategory.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Category\DeletedCategory.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Category\UpdateCategory.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\FinishedOrder\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Home\Error.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Menu\CreateProducts.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Menu\Deletedproduct.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Menu\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Menu\UpdateProduct.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Order\AddOrder.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Order\ShowOrders.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Profile\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\RequestOrder\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Shared\_CommentBox.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\SearchMenu.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\SearchResult.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\ShowCategoryMenu.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\ShowMenu\ShowDetailes.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\WishList\Index.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorTargetAssemblyInfo.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.RazorTargetAssemblyInfo.cs
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.Views.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.csproj.CopyComplete
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\refint\E-Commerce Website.dll
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.pdb
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\E-Commerce Website.genruntimeconfig.cache
+F:\New folder\E-Commerce Website.PL\E-Commerce Website\obj\Debug\net5.0\ref\E-Commerce Website.dll

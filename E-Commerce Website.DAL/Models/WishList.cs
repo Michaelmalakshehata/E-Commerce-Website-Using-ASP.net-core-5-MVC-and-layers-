@@ -18,8 +18,20 @@ namespace E_Commerce_Website.DAL.Models
         public string imgpath { get; set; }
 
         [Required]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
+        public decimal Discount { get; set; }
+        public decimal DiscountPrice
+        {
 
+            get
+            {
+                if (Discount > 0)
+                {
+                    return Price - (Price * (Discount / 100));
+                }
+                return 0;
+            }
+        }
         public string UserId { get; set; }
         public virtual ApplicationUser User { get; set; }
     }

@@ -24,6 +24,10 @@
            <input type="number" asp-for="Price" min="1" class="box" >
        </div>
        <div class="input-group">
+           <label asp-for="Discount" style="font-size:15px"></label>
+           <input type="number" asp-for="Discount" min="1" class="box" >
+       </div>
+       <div class="input-group">
            <label asp-for="Detailes" style="font-size:15px"></label>
            <textarea type="text" asp-for="Detailes" maxlength="100" minlength="5" placeholder="enter detailes" class="box" multiple></textarea>
        </div>
@@ -33,12 +37,9 @@
        </div>
         <div class="input-group">
            <label asp-for="File2" style="font-size:15px"></label>
-           <input type="file"accept="image/*" asp-for="File2" class="box" >
+           <input type="file"accept="video/*" asp-for="File2" class="box" >
        </div>
-        <div class="input-group">
-           <label asp-for="File3" style="font-size:15px"></label>
-           <input type="file"accept="image/*" asp-for="File3" class="box" >
-       </div>
+        
        <div class="input-group">
            <label style="font-size:15px;margin:5px 20px 0 0;">Category Name </label>
            <select asp-items="categorylist" asp-for="CategoryId" class="form-select" >

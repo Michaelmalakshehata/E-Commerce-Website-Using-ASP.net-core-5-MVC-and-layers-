@@ -18,7 +18,7 @@ namespace E_Commerce_Website.BL.ValidationAttributes
                 return null;
             }
             string newname = value.ToString();
-            if (context.Menus.FirstOrDefault(s => s.Name == newname) is not null)
+            if (context.Menus.FirstOrDefault(s => s.Name.Equals(newname)) is not null)
             {
                 return new ValidationResult("Name Already Exist in Product or restore it from deleted");
             }

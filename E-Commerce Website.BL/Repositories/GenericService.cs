@@ -31,7 +31,7 @@ namespace E_Commerce_Website.BL.Repositories
             }
             catch
             {
-                throw new ArgumentNullException();
+                return new List<T>();
             }
 
         }
@@ -41,12 +41,12 @@ namespace E_Commerce_Website.BL.Repositories
         {
             if (id == 0)
             {
-                throw new ArgumentNullException();
+                return default(T);
             }
 
             if (await _Entities.FindAsync(id) is null)
             {
-                throw new ArgumentNullException();
+                return default(T);
 
             }
             return await _Entities.FindAsync(id);
@@ -57,7 +57,7 @@ namespace E_Commerce_Website.BL.Repositories
         {
             if (data is null)
             {
-                throw new ArgumentNullException("data");
+                return default(T);
             }
             await _Context.AddAsync(data);
             await _Context.SaveChangesAsync();
@@ -65,18 +65,22 @@ namespace E_Commerce_Website.BL.Repositories
 
         }
 
-        async Task IGenericRepository<T>.update(T data,string name)
+        async Task<string> IGenericRepository<T>.update(T data,string name)
         {
             if (data is null &&name is null)
             {
-                throw new ArgumentNullException();
+                return string.Empty;
 
             }
             data.UpdateDate = DateTime.Now;
             data.UserName=name;
-            _Context.Update(data);
-
+            var result=_Context.Update(data);
            await _Context.SaveChangesAsync();
+            if(result is null)
+            {
+                return string.Empty;
+            }
+            return "Updated";
         }
 
 
@@ -84,13 +88,11 @@ namespace E_Commerce_Website.BL.Repositories
         {
             if (id == 0)
             {
-                throw new ArgumentNullException();
-
+                return 0;
             }
             if (await _Entities.FindAsync(id) is null)
             {
-                throw new ArgumentNullException();
-
+                return 0;
             }
             T obj = await _Entities.FindAsync(id);
             obj.IsDeleted = true;
@@ -105,7 +107,7 @@ namespace E_Commerce_Website.BL.Repositories
         {
             if (match is null)
             {
-                throw new ArgumentNullException();
+                return new List<T>();
             }
             return await _Entities.Where(match).Where(b => b.IsDeleted == false).ToListAsync();
         }
@@ -119,7 +121,7 @@ namespace E_Commerce_Website.BL.Repositories
             }
             catch
             {
-                throw new ArgumentNullException();
+               return new List<T>();
             }
         }
 
@@ -127,13 +129,11 @@ namespace E_Commerce_Website.BL.Repositories
         {
             if (id == 0 &&name is null)
             {
-                throw new ArgumentNullException();
-
+                return 0;
             }
             if (await _Entities.FindAsync(id) is null)
             {
-                throw new ArgumentNullException();
-
+                return 0;
             }
             T obj = await _Entities.FindAsync(id);
             obj.IsDeleted = false;

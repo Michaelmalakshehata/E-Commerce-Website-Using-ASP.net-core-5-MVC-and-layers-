@@ -35,6 +35,7 @@ namespace E_Commerce_Website.BL.Repositories
                         {
                             imgpath = item.imgpath,
                             Price = item.Price,
+                            Discount = item.Discount,
                             Ordername = item.Name,
                             MenuId = item.Id,
                             CategoryId = item.CategoryId,
@@ -68,6 +69,7 @@ namespace E_Commerce_Website.BL.Repositories
                         {
                             imgpath = item.imgpath,
                             Price = item.Price,
+                            Discount = item.Discount,
                             Ordername = item.Name,
                             MenuId = item.Id,
                             CategoryId = item.CategoryId,
@@ -93,7 +95,8 @@ namespace E_Commerce_Website.BL.Repositories
             {
                 if (id > 0)
                 {
-                    var result = await genericRepository.GetById(id);
+                    Menus result = await genericRepository.GetById(id);
+
                     if (result is not null)
                     {
 
@@ -126,6 +129,7 @@ namespace E_Commerce_Website.BL.Repositories
                             {
                                 imgpath = item.imgpath,
                                 Price = item.Price,
+                                Discount = item.Discount,
                                 Ordername = item.Name,
                                 MenuId = item.Id,
                                 CategoryId = item.CategoryId
@@ -159,6 +163,7 @@ namespace E_Commerce_Website.BL.Repositories
                             {
                                 imgpath = item.imgpath,
                                 Price = item.Price,
+                                Discount = item.Discount,
                                 Ordername = item.Name,
                                 MenuId = item.Id,
                                 CategoryId = item.CategoryId,
@@ -192,6 +197,7 @@ namespace E_Commerce_Website.BL.Repositories
                         {
                             imgpath = item.imgpath,
                             Price = item.Price,
+                            Discount = item.Discount,
                             Ordername = item.Name,
                             MenuId = item.Id,
                             CategoryId = item.CategoryId,

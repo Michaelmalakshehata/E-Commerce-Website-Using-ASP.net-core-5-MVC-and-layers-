@@ -23,12 +23,25 @@
                     <input type="hidden"asp-for="Ordername" value="@item.Ordername"/>
                     <input type="hidden"asp-for="imgpath" value="@item.imgpath"/>
                     <input type="hidden"asp-for="Price" value="@item.Price"/>
+                    <input type="hidden"asp-for="Discount" value="@item.Discount"/>
                     <input type="hidden"asp-for="UserId" value="@item.UserId"/>  
                     <a class="fas fa-times" asp-action="DeleteCartItem"  asp-controller="Cart" asp-route-Id="@item.Id" style="text-decoration:none;padding:auto 4px ;color:red;font-size:20px" onclick="return confirm('you sure to delete this item @item.Ordername ?')"></a>
                     <img src="~/uploaded_img/@item.imgpath" alt="">
                     <div class="name">@item.Ordername</div>
+                     @if(item.DiscountPrice >0){
+                        <div class="text-warning" style="text-decoration:line-through;text-decoration-color:red;font-size:16px">$@item.Price</div>
+                        <div class="text-primary" style="font-size:16px">%@item.Discount Off</div>                         
+                        }
                     <div class="flex">
-                        <div class="price">$@item.Price</div>
+                        
+                        @if(item.DiscountPrice ==0)
+                        {
+                        <div class="price">$@item.Price</div>  
+                        }
+                        else
+                        {
+                          <div class="price">$@item.DiscountPrice</div>
+                        }
                         <input type="number" asp-for="Quantity" value="@item.Quantity" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;">
                         <button type="submit" class="fas fa-edit" name="update_qty"></button>
                     </div>

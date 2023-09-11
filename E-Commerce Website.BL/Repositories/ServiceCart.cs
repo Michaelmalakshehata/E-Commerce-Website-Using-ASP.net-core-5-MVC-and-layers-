@@ -41,6 +41,7 @@ namespace E_Commerce_Website.BL.Repositories
                             Price = cartViewModel.Price,
                             imgpath = cartViewModel.imgpath,
                             Quantity = cartViewModel.Quantity,
+                            Discount = cartViewModel.Discount,
                             UserId = userid
                         };
                         var result = await context.AddAsync(cart);
@@ -104,7 +105,7 @@ namespace E_Commerce_Website.BL.Repositories
             }
         }
 
-    
+
         public async Task<List<CartUpdateViewModel>> GetAllUserCart(string Name)
         {
             try
@@ -123,7 +124,7 @@ namespace E_Commerce_Website.BL.Repositories
                             {
                                 if (await context.Menus.Where(o => o.IsDeleted == false).Where(o => o.Name == item.Ordername).FirstOrDefaultAsync() == null)
                                 {
-                                    await DeleteCartItem(item.Id,Name);
+                                    await DeleteCartItem(item.Id, Name);
                                     continue;
                                 }
                                 else
@@ -135,6 +136,7 @@ namespace E_Commerce_Website.BL.Repositories
                                         Quantity = item.Quantity,
                                         imgpath = item.imgpath,
                                         Price = item.Price,
+                                        Discount = item.Discount,
                                         Ordername = item.Ordername,
                                         SubTotalPrice = item.TotalPrice
                                     });
@@ -155,7 +157,7 @@ namespace E_Commerce_Website.BL.Repositories
 
         public async Task<int> GetCartCount(string name)
         {
-            if(!string.IsNullOrEmpty(name))
+            if (!string.IsNullOrEmpty(name))
             {
                 var id = await context.Users.Where(o => o.UserName == name).Select(o => o.Id).FirstOrDefaultAsync();
                 int numberCart = await context.Carts.Where(o => o.UserId == id).CountAsync();
@@ -164,7 +166,7 @@ namespace E_Commerce_Website.BL.Repositories
             return 0;
         }
 
-        public async Task<double> totalprice(string name)
+        public async Task<decimal> totalprice(string name)
         {
             try
             {
@@ -176,7 +178,7 @@ namespace E_Commerce_Website.BL.Repositories
                         List<Cart> carts = await context.Carts.Where(o => o.UserId == userid).ToListAsync();
                         if (carts is not null)
                         {
-                            double totalprice = 0;
+                            decimal totalprice = 0;
                             foreach (var c in carts)
                             {
                                 totalprice += c.TotalPrice;
@@ -185,7 +187,7 @@ namespace E_Commerce_Website.BL.Repositories
                         }
                     }
                 }
-                return double.NaN;
+                return 0;
             }
             catch
             {
@@ -205,6 +207,7 @@ namespace E_Commerce_Website.BL.Repositories
                         Ordername = cartUpdateViewModel.Ordername,
                         imgpath = cartUpdateViewModel.imgpath,
                         Price = cartUpdateViewModel.Price,
+                        Discount = cartUpdateViewModel.Discount,
                         Quantity = cartUpdateViewModel.Quantity,
                         UserId = cartUpdateViewModel.UserId
                     };

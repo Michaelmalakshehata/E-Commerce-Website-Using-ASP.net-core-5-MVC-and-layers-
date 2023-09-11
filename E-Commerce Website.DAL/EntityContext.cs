@@ -26,7 +26,7 @@ namespace E_Commerce_Website.DAL
         public virtual DbSet<FinishedOrders> FinishedOrders { get; set; }
         public virtual DbSet<Menus> Menus { get; set; }
         public virtual DbSet<WishList> WishLists { get; set; }
-
+        public virtual DbSet<Comments> Comments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -34,6 +34,8 @@ namespace E_Commerce_Website.DAL
             builder.Entity<Orders>().HasOne(p => p.User).WithMany(p => p.orders).HasForeignKey(p => p.UserId).HasConstraintName("UserCarts");
             builder.Entity<Cart>().HasOne(p => p.User).WithMany(p => p.Carts).HasForeignKey(p => p.UserId).HasConstraintName("UserOrders");
             builder.Entity<WishList>().HasOne(p => p.User).WithMany(p => p.WishLists).HasForeignKey(p => p.UserId).HasConstraintName("UserWishList");
+            builder.Entity<Comments>().HasOne(p => p.User).WithMany(p => p.Comments).HasForeignKey(p => p.UserId).HasConstraintName("UserComments");
+            builder.Entity<Comments>().HasOne(p => p.Menus).WithMany(p => p.Comments).HasForeignKey(p => p.MenuId).HasConstraintName("MenuComments");
 
 
             base.OnModelCreating(builder);

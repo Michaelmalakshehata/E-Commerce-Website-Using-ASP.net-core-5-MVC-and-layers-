@@ -58,7 +58,7 @@ namespace E_Commerce_Website.Controllers
                         }, "Confirmation email link", confirmationLink, null);
                         await _emailSender.SendEmailAsync(message);
                         await userManager.AddToRoleAsync(user, Roles.userrole);
-                        return RedirectToAction(nameof(SuccessRegistration));
+                        return RedirectToAction(nameof(Login));
                         
                     }
                     else
@@ -99,12 +99,6 @@ namespace E_Commerce_Website.Controllers
         {
             return View();
         }
-
-        [HttpGet]
-        public IActionResult SuccessRegistration()
-        {
-            return View();
-        }
         #endregion
 
 
@@ -132,7 +126,7 @@ namespace E_Commerce_Website.Controllers
                     {
                         if(! await userManager.IsEmailConfirmedAsync(user))
                         {
-                            ModelState.AddModelError("", "You Must Have Confirmed Email Login");
+                            ModelState.AddModelError("", "You Must Have Confirmed Email To Login");
                             return View();
                         }
                         else
@@ -147,7 +141,7 @@ namespace E_Commerce_Website.Controllers
                         }
                        
                     }
-                    ModelState.AddModelError("", "Invalid Email or Password");
+                    ModelState.AddModelError("", "Invalid UserName or Password");
 
                 }
 
@@ -191,7 +185,7 @@ namespace E_Commerce_Website.Controllers
                 return View(forgotPasswordModel);
 
             var user = await userManager.FindByEmailAsync(forgotPasswordModel.Email);
-            if (user == null)
+            if (user is null)
                 return RedirectToAction(nameof(ForgotPasswordConfirmation));
 
             var token = await userManager.GeneratePasswordResetTokenAsync(user);
@@ -224,7 +218,7 @@ namespace E_Commerce_Website.Controllers
                 return View(resetPasswordModel);
 
             var user = await userManager.FindByEmailAsync(resetPasswordModel.Email);
-            if (user == null)
+            if (user is null)
                 RedirectToAction(nameof(ResetPasswordConfirmation));
 
             var resetPassResult = await userManager.ResetPasswordAsync(user, resetPasswordModel.Token, resetPasswordModel.Password);
